@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>16Coins</title>
+</head>
+<body>
+  <div id="containerJogoComFlexas">
+    <div class="containerFlexa" onclick="handleFlechaNorte()">
+      <button class="flexa flexaNorte" >
+        >
+      </button>
+    </div>
+    <div class="containerFlexasEJogo">
+      <div class="containerFlexa">
+        <button class="flexa" onclick="handleFlechaOeste()">
+          <
+        </button>
+      </div>
+
+      <div id="containerJogo"></div>
+
+      <div class="containerFlexa">
+        <button class="flexa" onclick="handleFlechaLeste()">
+          >
+        </button>
+      </div>
+    </div>
+
+    <div class="containerFlexa">
+      <button class="flexa flexaSul" onclick="handleFlechaSul()">
+        >
+      </button>
+    </div>
+  </div>
+
+  <div id="textoDoJogo">
+    Clique em uma das setas para começar o jogo!
+  </div>
+
+  <div id="vidasDoJogador">
+    <img src="./assets/vida.webp" alt="" class="elemantoDeVida">
+    <img src="./assets/vida.webp" alt="" class="elemantoDeVida">
+    <img src="./assets/vida.webp" alt="" class="elemantoDeVida">
+  </div>
+
+  <div id="pontosJogador">
+    <div><img src="./assets/moeda.png" alt=""><span id="moedasSpan"></span> </div>
+    <div class="espada"><img src="./assets/espada.png" alt=""><span id="espadasSpan"></span> </div>
+    <div class="pocao"><img src="./assets/pocao.webp" alt=""><span id="pocaosSpan"></span></div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

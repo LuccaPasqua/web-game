@@ -1,0 +1,106 @@
+#containerJogoComFlexas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#containerJogo{
+  background-image: url(./assets/grama.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid rgb(61, 7, 7);
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition:visibility 0.3s linear,opacity 0.3s linear
+}
+
+.containerFlexasEJogo{
+  display: flex;
+  align-items: center;
+}
+
+.flexa{
+  width: 150px;
+  height: 150px;
+  font-size: 200px;
+  margin: 1rem;
+  padding: 3rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid transparent;
+  color: rgb(85, 131, 15);
+}
+
+.flexaNorte{
+  transform: rotate(-90deg);
+}
+
+.flexaSul{
+  transform: rotate(90deg);
+}
+
+#textoDoJogo{
+  position: absolute;
+  z-index: -3;
+  top: 10px;
+  width: 500px;
+  height: 150px;
+  font-size: 24px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+}
+
+#vidasDoJogador{
+  position: absolute;
+  z-index: -3;
+  top: 10px;
+  right: 5px;
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.elemantoDeVida{
+  width: fit-content;
+  height: 100%;
+}
+
+#pontosJogador{
+  position: absolute;
+  bottom: 20px;
+  left:20px;
+  display: flex;
+  align-items: left;
+  font-family: 'Rubik 80s Fade', cursive;
+  color: rgb(216, 189, 40);
+  font-size: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+#pontosJogador>div{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#pontosJogador>div>img{
+  width: 60px;
+  height: 60px;
+}
+
+
+.espada{
+  color: blue;
+}
+
+.pocao{
+  color: purple;
+}
