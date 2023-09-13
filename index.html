@@ -12,29 +12,29 @@
 </head>
 <body>
   <div id="containerJogoComFlexas">
-    <div class="containerFlexa" onclick="handleFlechaNorte()">
-      <button class="flexa flexaNorte" >
+    <div class="containerFlexa" id="divDoBotaoNorte">
+      <button class="flexa" id="flexaNorte" onclick="handleFlechaNorte()">
         >
       </button>
     </div>
     <div class="containerFlexasEJogo">
-      <div class="containerFlexa">
-        <button class="flexa" onclick="handleFlechaOeste()">
+      <div class="containerFlexa" id="divDoBotaoOeste">
+        <button class="flexa flexaOeste" id="flexaOeste" onclick="handleFlechaOeste()">
           <
         </button>
       </div>
 
       <div id="containerJogo"></div>
 
-      <div class="containerFlexa">
-        <button class="flexa" onclick="handleFlechaLeste()">
+      <div class="containerFlexa" id="divDoBotaoLeste">
+        <button class="flexa flexaLeste" id="flexaLeste" onclick="handleFlechaLeste()">
           >
         </button>
       </div>
     </div>
 
-    <div class="containerFlexa">
-      <button class="flexa flexaSul" onclick="handleFlechaSul()">
+    <div class="containerFlexa" id="divDoBotaoSul">
+      <button class="flexa" id="flexaSul" onclick="handleFlechaSul()">
         >
       </button>
     </div>
@@ -44,7 +44,7 @@
     Clique em uma das setas para começar o jogo!
   </div>
 
-  <div id="vidasDoJogador">
+  <div id="vidasDoJogador" class="elementovidasDoJogador">
     <img src="./assets/vida.webp" alt="" class="elemantoDeVida">
     <img src="./assets/vida.webp" alt="" class="elemantoDeVida">
     <img src="./assets/vida.webp" alt="" class="elemantoDeVida">
@@ -55,6 +55,8 @@
     <div class="espada"><img src="./assets/espada.png" alt=""><span id="espadasSpan"></span> </div>
     <div class="pocao"><img src="./assets/pocao.webp" alt=""><span id="pocaosSpan"></span></div>
   </div>
+
+  <div id="mapaDeAuxilho"></div>
 
   <script src="./script.js"></script>
 </body>
